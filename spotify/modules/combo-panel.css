@@ -1,8 +1,0 @@
-/* connect panels */
-.Root__right-sidebar {margin-bottom: -8px; }
-.main-buddyFeed-container {	border-radius: 8px 8px 0 0; }
-.Root__now-playing-bar {
-	border-radius: 0 0 8px 8px; 
-	box-shadow: 0px -6px 10px 0px rgba(0,0,0,0.4);
-}
-.main-nowPlayingBar-center { margin-top: 14px; }

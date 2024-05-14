@@ -1,0 +1,79 @@
+:root{
+	--tinted-on-sidebar: rgba(255,255,255,0.1)
+}
+
+/* make LibraryX span two grid rows */
+.Root__top-container:has(.Root__right-sidebar > :not(.LayoutResizer__collapsed)) .Root__nav-bar {
+	grid-row-end: span 2;
+}
+/* fix main panel and lyrics window */
+.Root__top-container:has(.Root__right-sidebar > :not(.LayoutResizer__collapsed)) .Root__main-view,
+.Root__top-container:has(.Root__right-sidebar > :not(.LayoutResizer__collapsed)) .Root__lyrics-cinema {
+	grid-area: 2 / left-sidebar-end / span 2 / right-sidebar-start;
+}
+
+.Root__top-container:has(.Root__right-sidebar > :not(.LayoutResizer__collapsed)) .Root__now-playing-bar {
+	display: grid;
+	grid-column: 3;
+	width: auto;
+}
+
+/* make all the divs act right */
+.Root__top-container:has(.Root__right-sidebar > :not(.LayoutResizer__collapsed)) .Root__now-playing-bar,
+.Root__top-container:has(.Root__right-sidebar > :not(.LayoutResizer__collapsed)) .main-nowPlayingBar-container,
+.Root__top-container:has(.Root__right-sidebar > :not(.LayoutResizer__collapsed)) .main-nowPlayingBar-nowPlayingBar  {
+	min-width: 0;
+	height: 100%;
+	flex-direction: column;
+}
+
+/* condensed player stuff */
+.Root__top-container:has(.Root__right-sidebar > :not(.LayoutResizer__collapsed)) .main-nowPlayingBar-left {
+	display: none;
+}
+.Root__top-container:has(.Root__right-sidebar > :not(.LayoutResizer__collapsed)) .main-nowPlayingBar-center {
+	margin-top: 14px;
+	width: 100%;
+}
+.Root__top-container:has(.Root__right-sidebar > :not(.LayoutResizer__collapsed)) .main-nowPlayingBar-right {
+	margin-bottom: 14px;
+	align-items: center;
+	justify-content: center;
+	width: 90%;
+}
+
+.main-nowPlayingBar-extraControls {	justify-content: inherit; }
+
+
+/* place the now playing bar in the last grid spot, and make it act like a panel */
+.Root__now-playing-bar {
+	border-radius: 8px;
+	background: var(--background-base);
+	transition: background 0.25s ease-out; /* needed for reactive color*/
+}
+.main-buddyFeed-container {
+	transition: background 0.25s ease-out; /* needed for reactive color*/
+}
+
+/*normalize a bunch of colors like NPV cards, queue button hovers, etc*/
+.main-nowPlayingView-section { --section-background-base: var(--tinted-on-sidebar) !important; }
+.Root__right-sidebar [class*='BoxComponent-group-listRow']:hover:after { background: var(--tinted-on-sidebar) !important; }
+.Root__right-sidebar [data-encore-id="tabItem"]:hover { background: var(--tinted-on-sidebar) !important; }
+.Root__right-sidebar [data-encore-id="tabItem"] {
+	border-radius: 8px; /* why this isnt done by default idk */
+}
+
+/* reactive volume bar */
+.volume-bar {
+	flex: none;
+	max-width: 120px;
+	transition-property: flex, margin-right;
+	transition: 0.2s ease-in-out;
+	margin-right: 0;
+}
+.volume-bar__slider-container { display: none; }
+.volume-bar:hover, .volume-bar:has(.progress-bar--isDragging) {
+	flex: auto;
+	margin-right: 8px;
+}
+.volume-bar:hover > .volume-bar__slider-container, .volume-bar:has(.progress-bar--isDragging) > .volume-bar__slider-container {	display: block !important; }

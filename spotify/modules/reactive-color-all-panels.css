@@ -1,3 +1,0 @@
-/* reactive color -- all panels colored */
-.Root__now-playing-bar { background: var(--current-album-color-d5); }
-.Root__right-sidebar>aside { background: linear-gradient(to bottom, var(--current-album-color) 0%, var(--current-album-color-d6) 100%) !important; }
