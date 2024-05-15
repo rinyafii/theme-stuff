@@ -1,0 +1,4 @@
+[class*='userTagUsername']:before, [class*='discriminator__']:before, [class*='hoverRoll_']>[class*='hovered_']:before {
+  content: '@';
+  font-size: 0.8em;
+}
