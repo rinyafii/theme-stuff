@@ -29,11 +29,11 @@ Additionally, emulates the "Extract background color based on artwork image" exp
 If you dont have Spicetify, [install it](https://spicetify.app/docs/getting-started) and then find your Spicetify config folder (Windows: `%appdata%\spicetify\`, Mac/Linux: `~/.config/spicetify/`)
 
 1. Download the version you want
-2. Unzip the archive into a new folder in your spicetify/Themes (name the folder "sidebar-player" to make life easier) <br/>
+2. Unzip the archive into a new folder in your spicetify/Themes, preferrably named "sidebar-player" <br/>
      - Make sure the hierarchy goes like this: `spicetify/Themes/sidebar-player/user.css`. Anything else won't work!
 4. If using a Reactive theme, grab the `sidebar-player.js` file from the theme folder and move it to spicetify/Extentions
 5. Open a CMD/Terminal window and run the following:<br/>
 `spicetify restore`<br/>
-`spicetify config current_theme sidebar-player`<br/>
+`spicetify config current_theme sidebar-player` (or whatever you named the folder you unarchived the ZIP into)<br/> 
 `spicetify config extensions sidebar-player.js` (if using reactive theme)<br/>
 `spicetify backup apply`
