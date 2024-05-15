@@ -1,0 +1,17 @@
+/* class non specific rewrite of https://discord.com/channels/1015060230222131221/1028106818368589824/1225844493169852457 */
+[class*='search_']:not([class*='search__']):not([class*='open_']) [class*='searchBar_'] {
+  width: 22px;
+  transition: var(0.25s);
+  background-color: transparent;
+}
+[class*='search_']:not([class*='search__']):hover [class*=icon__] { color: var(--interactive-active); }
+[class*='search_']:not([class*='search__'])[class*='focused_'] [class*=icon__] {
+  color: var(--interactive-active);
+  transform: scale(1);
+}
+[class*='search_']:not([class*='search__']) [class*=iconLayout] {
+  transform: scale(1.4);
+  transition: var(0.25s);
+  color: var(--interactive-normal);
+  cursor: pointer;
+}
