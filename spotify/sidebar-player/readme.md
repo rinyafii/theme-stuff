@@ -30,7 +30,7 @@ If you dont have Spicetify, [install it](https://spicetify.app/docs/getting-star
 
 1. Download the version you want
 2. Unzip the archive into a new folder in your spicetify/Themes (name the folder "sidebar-player" to make life easier) <br/>
-     Make sure the hierarchy goes like this: `spicetify/Themes/sidebar-player/user.css`. Anything else won't work!
+     - Make sure the hierarchy goes like this: `spicetify/Themes/sidebar-player/user.css`. Anything else won't work!
 4. If using a Reactive theme, grab the `sidebar-player.js` file from the theme folder and move it to spicetify/Extentions
 5. Open a CMD/Terminal window and run the following:<br/>
 `spicetify restore`<br/>
