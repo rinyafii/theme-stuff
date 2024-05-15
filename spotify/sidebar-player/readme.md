@@ -23,8 +23,8 @@ Made with absolute zero prior knowledge in JS or any similar language and pure s
 
 | | Base | Reactive Color | Reactive Color - All Panels |
 | --- | --- | --- | --- | 
-| Seperated Panels | <a href="base.zip?raw=true" >base.zip</a> | <a href="reactive.zip?raw=true" >reactive.zip (+.js)</a> | <a href="reactive-all.zip?raw=true" >reactive-all.zip (+.js)</a> | 
-| Combined Panels | <a href="base-combined.zip?raw=true" >base-combined.zip</a> | <a href="reactive-combined.zip?raw=true" >reactive-combined.zip (+.js)</a> | <a href="reactive-all-combined.zip?raw=true" >reactive-all-combined.zip (+.js)</a> | 
+| Seperated Panels | <a href="base.zip" >base.zip</a> | <a href="reactive.zip" >reactive.zip (+.js)</a> | <a href="reactive-all.zip" >reactive-all.zip (+.js)</a> | 
+| Combined Panels | <a href="base-combined.zip" >base-combined.zip</a> | <a href="reactive-combined.zip" >reactive-combined.zip (+.js)</a> | <a href="reactive-all-combined.zip" >reactive-all-combined.zip (+.js)</a> | 
 
 ## Install
 
