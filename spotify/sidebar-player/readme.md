@@ -4,6 +4,8 @@ A decently simple Spiceitfy theme that moves the player bar to stack with the ne
 
 Additionally, emulates the "Extract background color based on artwork image" experiment without actually using it.
 
+Made with absolute zero prior knowledge in JS or any similar language and pure spite.
+
 ### base
 <img src="https://github.com/rinyafii/theme-stuff/assets/36645011/7cd9619e-7d00-477f-8c8b-48efbaae5221" width="800">
 
