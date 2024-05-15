@@ -44,5 +44,5 @@ If you dont have Spicetify, [install it](https://spicetify.app/docs/getting-star
 
 - Supports both old and new (global/topbar) navigation
 - This theme will revert back to the default panel organization when the right sidebar is closed (for in situations where it gets closed, you don't get locked out)
-- (for theme devs) [](zipresources/sidebar-player.js) does nothing other than grab the color that Spotify assigns album art via the GraphQL wrapper and assigns it to root in a few different brightnesses to use in CSS. You are free to use it in your own themes as long as you credit in some way. But be warned this was my first ever JS script so...
+- (for theme devs) [sidebar-player.js](zipresources/sidebar-player.js) does nothing other than grab the color that Spotify assigns album art via the GraphQL wrapper and assigns it to root in a few different brightnesses to use in CSS. You are free to use it in your own themes as long as you credit in some way. But be warned this was my first ever JS script so...
      -  It was done this way because the colorExtractor function didn't get the colors I wanted, and it seems Spotify doesn't actively use it anymore either (all the colors used in-app (mobile player bg, album fade, etc) match the one got via GraphQL)
