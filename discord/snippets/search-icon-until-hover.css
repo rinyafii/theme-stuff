@@ -1,0 +1,17 @@
+/* rewrite of a really old tweak i had */
+[class*='search_']:not([class*='search__']):not([class*='open_']) [class*='searchBar_'] {
+  width: 27px;
+  transition: var(0.25s);
+  background-color: transparent;
+}
+[class*='search_']:not([class*='search__']):not([class*='open_']):hover [class*='searchBar_'] {
+  width: 120px;
+  background-color: var(--background-tertiary);
+}
+[class*='search_']:not([class*='search__']) [class*=iconLayout] {
+  transform: scale(1.4);
+  transition: var(0.25s);
+  color: var(--text-muted);
+}
+[class*='search_']:not([class*='search__']):hover [class*=iconLayout] { transform: scale(1); }
+[class*='search_']:not([class*='search__'])[class*='focused_'] [class*=iconLayout] { transform: scale(1); }
