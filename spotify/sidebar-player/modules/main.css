@@ -3,21 +3,25 @@
 }
 
 /* make LibraryX span two grid rows */
-.Root__top-container:has(.Root__right-sidebar > :not(.LayoutResizer__collapsed)) .Root__nav-bar {
+.Root__top-container:has(.Root__right-sidebar>:not(.LayoutResizer__collapsed)) .Root__nav-bar {
 	grid-row-end: span 2;
 }
 /* fix main panel and lyrics window */
-.Root__top-container:has(.Root__right-sidebar > :not(.LayoutResizer__collapsed)) .Root__main-view,
-.Root__top-container:has(.Root__right-sidebar > :not(.LayoutResizer__collapsed)) .Root__lyrics-cinema {
+.Root__top-container:has(.Root__right-sidebar>:not(.LayoutResizer__collapsed) ~ .Root__globalNav) .Root__main-view,
+.Root__top-container:has(.Root__right-sidebar>:not(.LayoutResizer__collapsed) ~ .Root__globalNav) .Root__lyrics-cinema {
 	grid-area: 2 / left-sidebar-end / span 2 / right-sidebar-start;
 }
+.Root__top-container:has(.Root__right-sidebar>:not(.LayoutResizer__collapsed)) .Root__main-view,
+.Root__top-container:has(.Root__right-sidebar>:not(.LayoutResizer__collapsed)) .Root__lyrics-cinema {
+	grid-row-end: span 2;
+}
+
 
 .Root__top-container:has(.Root__right-sidebar > :not(.LayoutResizer__collapsed)) .Root__now-playing-bar {
 	display: grid;
 	grid-column: 3;
 	width: auto;
 }
-
 /* make all the divs act right */
 .Root__top-container:has(.Root__right-sidebar > :not(.LayoutResizer__collapsed)) .Root__now-playing-bar,
 .Root__top-container:has(.Root__right-sidebar > :not(.LayoutResizer__collapsed)) .main-nowPlayingBar-container,
