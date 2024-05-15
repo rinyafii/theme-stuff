@@ -21,24 +21,19 @@ Additionally, emulates the "Extract background color based on artwork image" exp
 
 | | Base | Reactive Color | Reactive Color - All Panels |
 | --- | --- | --- | --- | 
-| Seperated Panels | <a href="user-base.css" >Download<br/>(user-base.css)</a> | <a href="user-reactive-color.css" >Download<br/>(user-reactive-color.css)</a> | <a href="user-reactive-all.css" >Download<br/>(user-reactive-all.css)</a> | 
-| Combined Panels | <a href="user-base-combined.css" >Download<br/>(user-base-combined.css)</a> | <a href="user-reactive-color-combined.css" >Download<br/>(user-reactive-color-combined.css)</a> | <a href="user-reactive-all-combined.css" >Download<br/>(user-reactive-all-combined.css)</a> 
-
-> [!IMPORTANT]
-> if you are downloading the reactive color version you also need the extension!!! <br/>
-> [Reactive Color Extension (sidebar-player.js)](sidebar-player.js)
+| Seperated Panels | <a href="base.zip" >base.zip</a> | <a href="reactive.zip" >reactive.zip (+.js)</a> | <a href="reactive-all.zip" >reactive-all.zip (+.js)</a> | 
+| Combined Panels | <a href="base-combined.zip" >base-combined.zip</a> | <a href="reactive-combined.zip" >reactive-combined.zip (+.js)</a> | <a href="reactive-all-combined.zip" >reactive-all-combined.zip (+.js)</a> | 
 
 ## Install
 
 If you dont have Spicetify, [install it](https://spicetify.app/docs/getting-started) and then find your Spicetify config folder (Windows: `%appdata%\spicetify\`, Mac/Linux: `~/.config/spicetify/`)
 
-1. Create a new folder in spicetify/Themes named `sidebar-player`
-2. Rename the CSS file you downloaded from here to user.css and move it into there
-3. If using a Reactive theme, download the `sidebar-player.js` extension and move it to spicetify/Extentions
-4. Open a CMD/Terminal window and run the following:<br/>
+1. Download the version you want
+2. Unzip the archive into a new folder in your spicetify/Themes (name the folder "sidebar-player" to make life easier)
+     Make sure the hierarchy goes like this: `spicetify/Themes/sidebar-player/user.css`. Anything else won't work!
+4. If using a Reactive theme, grab the `sidebar-player.js` file from the theme folder and move it to spicetify/Extentions
+5. Open a CMD/Terminal window and run the following:<br/>
 `spicetify restore`<br/>
 `spicetify config current_theme sidebar-player`<br/>
 `spicetify config extensions sidebar-player.js` (if using reactive theme)<br/>
 `spicetify backup apply`
-
-Note: by default, applying the theme will show an error in the terminal about a missing color.ini file, but it applies & works just fine without it. If you really want to shut it up I have a blank one [here](color.ini) that you can put in spicetify/Themes/sidebar-player.
