@@ -37,6 +37,7 @@
   background: var(--primary-760); /*i hate discords css color system so much*/
 }
 
+/* text shadow on username/pronouns area because some themes could make it hard to read */
 [class*="userProfileOuter"] h1,
 [class*="userProfileOuter"] span[class*='userTagUsername_'],
 [class*="userProfileOuter"] div[class*='pronouns_'] {
@@ -53,6 +54,11 @@
 /* special for non-nitro themes */
 [class*="userProfileOuterUnthemed_"] [class*="userPopoutInner_"][class*="biteSizeInnerThemed_"] > [class*='body_'] > div:not([class*="container_"]):not([class*="container_"]+div[class*="mutual"]){
   border-top: var(--bg-mod-faint) 1px solid;
+}
+/* add more padding for most of the body but not roles */
+[class*="userPopoutInner_"][class*="biteSizeInnerThemed_"] > [class*='body_'] > div:not([class*="container_"]):not(div:has([aria-label='Roles'])){
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
 }
 
 /* footer message thingy*/
