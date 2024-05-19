@@ -65,8 +65,8 @@
   background: rgb(var(--bg-overlay-color)/.6) !important;
   border-radius: var(--radius-sm);
 }
-[class*='descriptionClamp_'] { -webkit-line-clamp: 99 } /* dont cut off bio, why would you do that */
-[class*='viewFullBio__'] {display: none;} /* remove 'view full bio' button from ever existing */
+[class*='descriptionClamp_'] { -webkit-line-clamp: 10 } /* make bio cut off a more sane number */
+/*[class*='viewFullBio__'] {display: none;}  */
 [class*="userPopoutInner_"] [class*="banner"] { border-radius: var(--radius-sm) var(--radius-sm) 0 0; } /* fix banner corners (on some themes) */
 [class*="userPopoutInner_"] [class*="activity_"] { border: none; } /* remove default borders on the activity card */
 
