@@ -1,0 +1,84 @@
+/* source: https://github.com/rinyafii/theme-stuff/discord/snippets */
+
+/*main (expanded) profile --------- */
+[class*="userProfileModalInner_"]:before { display: none; }
+[class*='fullSizeOverlayBackground_'] { background: rgb(var(--bg-overlay-color)/.6) !important;}
+
+/*mini profile --------- */
+[class*="userProfileOuterThemed_"] { padding: 0 !important; } /* remove ugly outer border */
+[class*="userProfileOuterThemed_"] [class*="userPopoutInner_"]:before { display: none; } /* remove default background tint */
+[class*="userProfileOuterThemed_"] [class*="body_"]:not([class*='bodyNormal']) > [class*="container_"] { margin-bottom: 8px; } /* add margin below username */
+
+/* invent a new bg tint */
+[class*="userProfileOuterThemed_"] [class*="body_"]:not([class*='bodyNormal']) > [class*="container_"]:after {
+  content: '';
+  position: fixed;
+  left: 0.5rem;
+  width: calc(100% - 1rem);
+  height: -webkit-fill-available;
+  z-index: -1;
+  margin-top: 8px; 
+  margin-bottom: 0.5rem; 
+  border-radius: var(--radius-sm) var(--radius-sm) calc(var(--radius-sm)/2) calc(var(--radius-sm)/2);
+  background: rgb(var(--bg-overlay-color)/.6);
+  border: var(--profile-body-border-color) 0.8px solid;
+}
+
+/* fix colors on role pills */
+[class*="userProfileOuterThemed_"] [class*="pill__"] { background: rgb(var(--bg-overlay-color)/.4) !important; }
+
+/* make the 'add role' button visually different (and also make it a perfect circle) */
+[class*="userProfileOuter"] .button__6d63b {
+  background: rgb(var(--bg-overlay-color)/.2);
+  border-radius: 50%;
+  aspect-ratio: 1;
+}
+[class*="userProfileOuterUnthemed_"] .button__6d63b {
+  background: var(--primary-760); /*i hate discords css color system so much*/
+}
+
+[class*="userProfileOuter"] h1,
+[class*="userProfileOuter"] span[class*='userTagUsername_'],
+[class*="userProfileOuter"] div[class*='pronouns_'] {
+  text-shadow: rgb(var(--bg-overlay-color)/0.3) 1px 0 px;
+}
+
+/* section dividers */
+[class*="userPopoutInner_"][class*="biteSizeInnerThemed_"] > [class*='body_'] > div:not([class*="container_"]):not([class*="container_"]+div){
+  background: transparent !important;
+  padding: 0.75rem 0.1rem 0 0.1rem;
+  border-top: rgb(var(--bg-overlay-color-inverse)/.1) 1px solid;
+  border-radius: 0;
+}
+/* special for non-nitro themes */
+[class*="userProfileOuterUnthemed_"] [class*="userPopoutInner_"][class*="biteSizeInnerThemed_"] > [class*='body_'] > div:not([class*="container_"]):not([class*="container_"]+div[class*="mutual"]){
+  border-top: var(--bg-mod-faint) 1px solid;
+}
+
+/* footer message thingy*/
+[class*="userProfileOuterThemed_"] [class*='footer_'] [class*='themedBackground_']{
+  background: rgb(var(--bg-overlay-color)/.4) !important;
+}
+
+/* fix colors on badge container */
+[class*="userProfileOuterThemed_"] [class*="userPopoutInner_"] [class*="container__"] {
+  background: rgb(var(--bg-overlay-color)/.6) !important;
+  border-radius: var(--radius-sm);
+}
+[class*='descriptionClamp_'] { -webkit-line-clamp: 99 } /* dont cut off bio, why would you do that */
+[class*='viewFullBio__'] {display: none;} /* remove 'view full bio' button from ever existing */
+[class*="userPopoutInner_"] [class*="banner"] { border-radius: var(--radius-sm) var(--radius-sm) 0 0; } /* fix banner corners (on some themes) */
+[class*="userPopoutInner_"] [class*="activity_"] { border: none; } /* remove default borders on the activity card */
+
+/*pfp position on themed mini profiles*/
+[class*="userProfileOuterThemed_"] [class*="userPopoutInner_"] [class*="clickable_"] {
+  top: 58px;
+  left: 18px;
+  transform: scale(1.04);
+}
+
+/* fix user status icon bg color */
+[class*="userProfileOuterThemed_"] [class*="userPopoutInner_"] [class*="clickable_"] circle:not(svg) { opacity: 0 !important; }
+
+/*slimmer status bubble*/
+[class*="statusBubbleWithTextPadding_"] { padding: 5px 10px; }
