@@ -1,4 +1,5 @@
-/* rewrite of a really old tweak i had */
+/* source: https://github.com/rinyafii/theme-stuff/discord/snippets */
+/* rewrite of a really old tweak i had, based on search-icon-until-focus.css */
 [class*='search_']:not([class*='search__']):not([class*='open_']) [class*='searchBar_'] {
   width: 27px;
   transition: var(0.25s);
