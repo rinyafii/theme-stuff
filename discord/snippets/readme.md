@@ -1,13 +1,13 @@
 ## search-icon-until-focus.css
 `@import url('https://github.com/rinyafii/theme-stuff/raw/main/discord/snippets/search-icon-until-focus.css')`<br/>
 
-![the](https://github.com/rinyafii/theme-stuff/assets/36645011/2b9bc897-9e20-4abd-884b-0ef3d836363b)
+[the](https://github.com/rinyafii/theme-stuff/assets/36645011/2b9bc897-9e20-4abd-884b-0ef3d836363b)
 
 
 ## search-icon-until-hover.css
 `@import url('https://github.com/rinyafii/theme-stuff/raw/main/discord/snippets/search-icon-until-hover.css')`<br/>
 
-![the](https://github.com/rinyafii/theme-stuff/assets/36645011/665d5eb5-8d6f-4bd8-a7e5-91d50de184d0)
+[the](https://github.com/rinyafii/theme-stuff/assets/36645011/665d5eb5-8d6f-4bd8-a7e5-91d50de184d0)
 
 ## profile-v2-but-better.css
 !! "Simplified Profiles" EXPERIMENT IS REQUIRED !!<br/>
