@@ -1,3 +1,4 @@
+/* source: https://github.com/rinyafii/theme-stuff/discord/snippets */
 /* class non specific rewrite of https://discord.com/channels/1015060230222131221/1028106818368589824/1225844493169852457 */
 [class*='search_']:not([class*='search__']):not([class*='open_']) [class*='searchBar_'] {
   width: 22px;
