@@ -84,7 +84,7 @@
 }
 
 /* fix user status icon bg color */
-[class*="userProfileOuterThemed_"] [class*="userPopoutInner_"] [class*="clickable_"] circle:not(svg) { opacity: 0 !important; }
+[class*="userProfileOuterThemed_"] [class*="clickable_"] svg > :not([fill*='#']):not(foreignObject) { opacity: 0 !important; }
 
 /*slimmer status bubble*/
 [class*="statusBubbleWithTextPadding_"] { padding: 5px 10px; }
